@@ -10,5 +10,10 @@ public class LaunchPage extends ZohoBasePage {
         System.out.println("We are printing from Launchpage");
     
     }
+
+   public void openBrowser(String browser)
+    {
+            System.out.println("Printing from Launch page");
+    }
     
 }

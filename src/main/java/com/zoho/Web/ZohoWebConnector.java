@@ -1,14 +1,10 @@
+package com.zoho.Web;
 
+public interface ZohoWebConnector extends WebConnector {
 
-public interface ZohoWebConnector extends Webconnector{
-
-    void logout();
-    void vaidateTitle();
-    void validateLogin();
-
-    void openBrowser(String browser);
-    void navigate(String url);
-    void quit();
+     void logout();
+     void validateTitle();
+     void validateLogin();
+     
     
-
 }

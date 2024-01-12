@@ -1,8 +1,6 @@
 package com.zoho.Base.Pages;
 
-public  class ZohoBasePage implements ZohoPage{
-
-   
+public class ZohoBasePage implements ZohoPage {
 
     @Override
     public void openBrowser(String browser) {
@@ -58,6 +56,5 @@ public  class ZohoBasePage implements ZohoPage{
         throw new UnsupportedOperationException("Unimplemented method 'validator'");
     }
 
-    
-    
+   
 }

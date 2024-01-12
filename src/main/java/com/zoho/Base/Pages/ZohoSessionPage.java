@@ -2,10 +2,9 @@ package com.zoho.Base.Pages;
 
 public interface ZohoSessionPage {
 
-
-    //Zoho Sessions
+    // Zoho Sessions page hold the functions once the session is established
     void createDeal();
+
     void logout();
 
-    
-} 
+}
