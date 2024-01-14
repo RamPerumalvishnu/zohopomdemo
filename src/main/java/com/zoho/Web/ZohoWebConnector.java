@@ -6,5 +6,7 @@ public interface ZohoWebConnector extends WebConnector {
      void validateTitle();
      void validateLogin();
      
-    
+     void openBrowser(String browser);
+     void navigate(String url);
+     void quit();
 }

@@ -1,11 +1,16 @@
 package com.zoho.Base.Pages;
 
+import org.testng.Reporter;
+
+import com.zoho.Session.ZohoTestSession;
+import com.zoho.Web.WebConnector;
+
 public class ZohoBasePage implements ZohoPage {
 
     @Override
-    public void openBrowser(String browser) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'openBrowser'");
+    public ZohoPage openBrowser(String browser) {
+       
+        return null;
     }
 
     @Override
@@ -33,7 +38,7 @@ public class ZohoBasePage implements ZohoPage {
     }
 
     @Override
-    public void gotoHomepage() {
+    public ZohoPage gotoHomepage() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'gotoHomepage'");
     }
@@ -55,6 +60,30 @@ public class ZohoBasePage implements ZohoPage {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'validator'");
     }
+
+    public ZohoTestSession getSession()
+    {
+        return (ZohoTestSession)Reporter.getCurrentTestResult().getTestContext().getAttribute("session");
+    }
+
+    public WebConnector getDriver()
+    {
+        return getSession().getcon();
+    }
+
+    @Override
+    public ZohoPage gotoEnteruserNamPage() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'gotoEnteruserNamPage'");
+    }
+
+    @Override
+    public ZohoPage navigate() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'navigate'");
+    }
+
+   
 
    
 }

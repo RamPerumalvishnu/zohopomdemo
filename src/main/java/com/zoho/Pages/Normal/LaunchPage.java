@@ -1,19 +1,28 @@
 package com.zoho.Pages.Normal;
 
 import com.zoho.Base.Pages.ZohoBasePage;
+import com.zoho.Base.Pages.ZohoPage;
+import com.zoho.Session.ZohoTestSession;
 
 public class LaunchPage extends ZohoBasePage {
-   
 
-    public void gotoHomepage() {
-        
-        System.out.println("We are printing from Launchpage");
-    
+
+    public ZohoPage openBrowser(String browser) {
+        //ZohoTestSession session = getSession();
+        getDriver().openBrowser("Chrome");
+        return this;
+    }   
+
+    public ZohoPage gotoHomepage(){
+
+     //   ZohoTestSession session = getSession();
+     //   session.getcon().navigate("https://www.zoho.com");
+        getDriver().navigate("https://www.zoho.com");
+        return new Homepage();
+
     }
 
-   public void openBrowser(String browser)
-    {
-            System.out.println("Printing from Launch page");
-    }
-    
+  
+
+
 }

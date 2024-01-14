@@ -3,15 +3,14 @@ package com.zoho.Base.Pages;
 public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
 
  
-
+   
     // ZohoBased
-    void gotoHomepage();
-
-    void gotoRegisterpage();
-
-    void submitUsername(String userID);
-
-    void validator();
+    ZohoPage gotoHomepage();
+    ZohoPage gotoEnteruserNamPage();
+    ZohoPage gotoRegisterpage();
+    ZohoPage submitUsername(String userID);
+    ZohoPage validator();
+    ZohoPage navigate();
 
   
 }
