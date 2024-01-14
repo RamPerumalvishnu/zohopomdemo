@@ -6,7 +6,7 @@ public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
    
     // ZohoBased
     ZohoPage gotoHomepage();
-    ZohoPage gotoEnteruserNamPage();
+    ZohoPage gotoEnterUserNamePage();
     ZohoPage gotoRegisterpage();
     ZohoPage submitUsername(String userID);
     ZohoPage validator();

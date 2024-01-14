@@ -2,7 +2,6 @@ package com.zoho.Pages.Normal;
 
 import com.zoho.Base.Pages.ZohoBasePage;
 import com.zoho.Base.Pages.ZohoPage;
-import com.zoho.Session.ZohoTestSession;
 
 public class LaunchPage extends ZohoBasePage {
 
@@ -14,7 +13,6 @@ public class LaunchPage extends ZohoBasePage {
     }   
 
     public ZohoPage gotoHomepage(){
-
      //   ZohoTestSession session = getSession();
      //   session.getcon().navigate("https://www.zoho.com");
         getDriver().navigate("https://www.zoho.com");

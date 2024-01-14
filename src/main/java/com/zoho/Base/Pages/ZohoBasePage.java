@@ -71,16 +71,16 @@ public class ZohoBasePage implements ZohoPage {
         return getSession().getcon();
     }
 
-    @Override
-    public ZohoPage gotoEnteruserNamPage() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'gotoEnteruserNamPage'");
-    }
 
     @Override
     public ZohoPage navigate() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'navigate'");
+    }
+
+    @Override
+    public ZohoPage gotoEnterUserNamePage() {
+        return null;
     }
 
    
