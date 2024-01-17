@@ -1,5 +1,6 @@
 package com.zoho.Base.Pages;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
 import com.zoho.Session.ZohoTestSession;
@@ -43,22 +44,17 @@ public class ZohoBasePage implements ZohoPage {
         throw new UnsupportedOperationException("Unimplemented method 'gotoHomepage'");
     }
 
-    @Override
-    public void gotoRegisterpage() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'gotoRegisterpage'");
-    }
+   
 
     @Override
-    public void submitUsername(String userID) {
+    public ZohoPage submitUsername(String userID) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'submitUsername'");
     }
 
     @Override
-    public void validator() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validator'");
+    public WebConnector validator() {
+      return getSession().getcon();
     }
 
     public ZohoTestSession getSession()
@@ -66,13 +62,7 @@ public class ZohoBasePage implements ZohoPage {
         return (ZohoTestSession)Reporter.getCurrentTestResult().getTestContext().getAttribute("session");
     }
 
-    public WebConnector getDriver()
-    {
-        return getSession().getcon();
-    }
-
-
-    @Override
+       @Override
     public ZohoPage navigate() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'navigate'");
@@ -80,9 +70,30 @@ public class ZohoBasePage implements ZohoPage {
 
     @Override
     public ZohoPage gotoEnterUserNamePage() {
-        return null;
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'gotoEnterUserNamePage'");
+    }
+   
+    public WebDriver getcurrentDriver()
+    {
+        return getSession().getcon().getcurrentDriver();
+    }
+   
+    public WebConnector getdriver()
+    {
+        return getSession().getcon();
     }
 
+    @Override
+    public ZohoPage gotoEnterpasswordPage() {
+        // TODO Auto-generated method stub
+       return null;
+    }
+
+    
+    
+
+   
    
 
    

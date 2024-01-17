@@ -1,12 +1,14 @@
 package com.zoho.Web;
 
-public interface ZohoWebConnector extends WebConnector {
+import org.openqa.selenium.WebDriver;
+
+public interface ZohoWebConnector  {
 
      void logout();
-     void validateTitle();
+     void validateTitle(String expectedTitle);
      void validateLogin();
-     
      void openBrowser(String browser);
      void navigate(String url);
      void quit();
+   
 }

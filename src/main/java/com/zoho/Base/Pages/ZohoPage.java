@@ -1,5 +1,9 @@
 package com.zoho.Base.Pages;
 
+import org.openqa.selenium.WebDriver;
+
+import com.zoho.Web.WebConnector;
+
 public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
 
  
@@ -7,10 +11,11 @@ public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
     // ZohoBased
     ZohoPage gotoHomepage();
     ZohoPage gotoEnterUserNamePage();
-    ZohoPage gotoRegisterpage();
+    ZohoPage gotoEnterpasswordPage();
     ZohoPage submitUsername(String userID);
-    ZohoPage validator();
+    WebConnector validator();
     ZohoPage navigate();
+
 
   
 }

@@ -7,28 +7,15 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 
 import com.zoho.Listeners.ZohoEventListeners;
+import com.zoho.Session.ZohoTestSession;
 
 public class ZohoDriver extends ZohoValidationDriver{
-    WebDriverListener listener;
-    WebDriver webdriver;
-    WebDriver driver ;
-    @Override
-    public void logout() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'logout'");
-    }
+   
+    
 
-    @Override
-    public void validateTitle() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validateTitle'");
-    }
+   
 
-    @Override
-    public void validateLogin() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'validateLogin'");
-    }
+  
 
     @Override
     public void openBrowser(String browser) {
@@ -48,10 +35,43 @@ public class ZohoDriver extends ZohoValidationDriver{
 		driver.get(url);
     }
 
+   
+
     @Override
     public void quit() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'quit'");
     }
+
+    public WebDriver getcurrentDriver()
+    {
+        return driver;
+    }
+
+   
+
+    @Override
+    public void validateLogin() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'validateLogin'");
+    }
+
+
+
+    @Override
+    public void logout() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'logout'");
+    }
+
+    
+
+    
+
+     
+  
+    
+    
+    
     
 }

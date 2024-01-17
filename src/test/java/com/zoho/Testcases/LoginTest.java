@@ -13,7 +13,11 @@ public class LoginTest {
 				session
 				.init()
 				.openBrowser("Chrome")
-				.gotoHomepage();
+				.gotoHomepage()
+				.validator().validateTitle("Testing");
+				
+				
+				
 			
 
 		/*
