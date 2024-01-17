@@ -6,7 +6,7 @@ import org.testng.Assert;
 
 
 
-public abstract class ZohoValidationDriver implements WebConnector{
+public abstract class ZohoValidationDriver implements Webconnector{
 
     WebDriverListener listener;
     WebDriver webdriver;

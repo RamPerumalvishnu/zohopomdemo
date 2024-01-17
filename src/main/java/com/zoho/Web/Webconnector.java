@@ -2,7 +2,7 @@ package com.zoho.Web;
 
 import org.openqa.selenium.WebDriver;
 
-public interface WebConnector extends ZohoWebConnector {
+public interface Webconnector extends ZohoWebConnector {
 
     void logout();
     void validateTitle(String expectedTitle);

@@ -4,11 +4,11 @@ import org.testng.Reporter;
 
 import com.zoho.Base.Pages.ZohoPage;
 import com.zoho.Pages.Normal.LaunchPage;
-import com.zoho.Web.WebConnector;
+import com.zoho.Web.Webconnector;
 import com.zoho.Web.ZohoDriver;
 
 public class ZohoTestSession {
-    WebConnector con;
+    Webconnector con;
 
     public ZohoTestSession() {
         con = new ZohoDriver();
@@ -24,7 +24,7 @@ public class ZohoTestSession {
 
     }
 
-    public WebConnector getcon() {
+    public Webconnector getcon() {
         return con;
     }
 

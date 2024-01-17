@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
 import com.zoho.Session.ZohoTestSession;
-import com.zoho.Web.WebConnector;
+import com.zoho.Web.Webconnector;
 
 public class ZohoBasePage implements ZohoPage {
 
@@ -53,7 +53,7 @@ public class ZohoBasePage implements ZohoPage {
     }
 
     @Override
-    public WebConnector validator() {
+    public Webconnector validator() {
       return getSession().getcon();
     }
 
@@ -79,7 +79,7 @@ public class ZohoBasePage implements ZohoPage {
         return getSession().getcon().getcurrentDriver();
     }
    
-    public WebConnector getdriver()
+    public Webconnector getdriver()
     {
         return getSession().getcon();
     }
