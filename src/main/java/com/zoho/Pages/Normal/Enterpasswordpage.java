@@ -1,20 +1,20 @@
-package com.zoho.Pages.Normal;
+package com.Zoho.Pages.Normal;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.zoho.Base.Pages.Constant;
-import com.zoho.Base.Pages.ZohoBasePage;
-import com.zoho.Base.Pages.ZohoPage;
+import com.Zoho.Base.Pages.Constant;
+import com.Zoho.Base.Pages.HsbcBasePage;
+import com.Zoho.Base.Pages.HsbcPage;
 
-public class Enterpasswordpage extends ZohoBasePage{
+public class Enterpasswordpage extends HsbcBasePage{
     
     @FindBy(id =Constant.PASSWORD)
     WebElement password;
 
     
-    public ZohoPage gotoEnterpasswordPage(){
+    public HsbcPage gotoEnterpasswordPage(){
         password.sendKeys(Constant.userName);
         return null;
         

@@ -1,8 +1,8 @@
-package com.zoho.Base.Pages;
+package com.Zoho.Base.Pages;
 
 import org.testng.Reporter;
 
-import com.zoho.Session.ZohoTestSession;
+import com.Zoho.Session.HsbcTestSession;
 
 public class Constant  {
 

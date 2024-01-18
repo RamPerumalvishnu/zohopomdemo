@@ -1,11 +1,11 @@
-package com.zoho.Base.Pages;
+package com.Zoho.Base.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-import com.zoho.Session.ZohoTestSession;
-import com.zoho.Web.Webconnector;
+import com.Zoho.Session.ZohoTestSession;
+import com.Zoho.Web.Webconnector;
 
 public class ZohoBasePage implements ZohoPage {
 
@@ -22,11 +22,7 @@ public class ZohoBasePage implements ZohoPage {
         return null;
     }
 
-    @Override
-    public void quit() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'quit'");
-    }
+  
 
     @Override
     public void getTotalWindows() {
@@ -99,6 +95,11 @@ public class ZohoBasePage implements ZohoPage {
     @Override
     public ZohoPage submitUserName() {
        return null;
+    }
+
+    @Override
+    public void quit() {
+        getcurrentDriver().quit();
     }
 
     

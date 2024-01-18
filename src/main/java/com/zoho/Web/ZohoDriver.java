@@ -1,4 +1,6 @@
-package com.zoho.Web;
+package com.Zoho.Web;
+
+import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,8 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 
-import com.zoho.Listeners.ZohoEventListeners;
-import com.zoho.Session.ZohoTestSession;
+import com.Zoho.Listeners.ZohoEventListeners;
+import com.Zoho.Session.ZohoTestSession;
 
 public class ZohoDriver extends ZohoValidationDriver{
     
@@ -30,14 +32,16 @@ public class ZohoDriver extends ZohoValidationDriver{
     public void navigate(String url) {
 
 		driver.get(url);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
     }
 
    
 
     @Override
     public void quit() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'quit'");
+       driver.close();
+       driver.quit();
     }
 
     public WebDriver getcurrentDriver()

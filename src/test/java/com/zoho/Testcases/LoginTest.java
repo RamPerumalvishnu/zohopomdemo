@@ -1,9 +1,9 @@
-package com.zoho.Testcases;
+package com.Zoho.Testcases;
 
 import org.testng.annotations.Test;
 
-import com.zoho.Base.Pages.Constant;
-import com.zoho.Session.ZohoTestSession;
+import com.Zoho.Base.Pages.Constant;
+import com.Zoho.Session.ZohoTestSession;
 
 
 public class LoginTest {
@@ -19,7 +19,8 @@ public class LoginTest {
 				.validator().validateTitle(Constant.HOME_TITLE)
 				.gotoEnterUserNamePage()
 				.submitUserName()
-				.gotoEnterpasswordPage();
+				.gotoEnterpasswordPage()
+				.quit();
 		
 				
 		
@@ -39,7 +40,7 @@ public class LoginTest {
 		 * WebDriver webdriver = new ChromeDriver(options);
 		 * WebDriverListener listener = new ZohoEventListeners();
 		 * WebDriver driver = new EventFiringDecorator(listener).decorate(webdriver);
-		 * driver.get("https://www.zoho.com/");
+		 * driver.get("https://www.Zoho.com/");
 		 * driver.findElement(By.xpath(
 		 * "/html/body/main/div/div/div[1]/div/div/div[3]/div/div[4]/div/a[1]")).click()
 		 * ;

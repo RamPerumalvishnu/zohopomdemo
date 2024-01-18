@@ -1,9 +1,9 @@
-package com.zoho.Base.Pages;
+package com.Zoho.Base.Pages;
 
 import org.openqa.selenium.WebDriver;
 
-import com.zoho.Session.ZohoTestSession;
-import com.zoho.Web.Webconnector;
+import com.Zoho.Session.ZohoTestSession;
+import com.Zoho.Web.Webconnector;
 
 public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
 
@@ -17,6 +17,8 @@ public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
     ZohoPage navigate();
     ZohoTestSession getSession();
     ZohoPage submitUserName();
+    void quit();
+
 
 
   

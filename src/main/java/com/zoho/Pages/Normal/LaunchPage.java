@@ -1,24 +1,24 @@
-package com.zoho.Pages.Normal;
+package com.Zoho.Pages.Normal;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.zoho.Base.Pages.ZohoBasePage;
-import com.zoho.Base.Pages.ZohoPage;
+import com.Zoho.Base.Pages.HsbcBasePage;
+import com.Zoho.Base.Pages.HsbcPage;
 
-public class LaunchPage extends ZohoBasePage {
+public class LaunchPage extends HsbcBasePage {
 
 
    
 
-    public ZohoPage openBrowser(String browser) {
-        //ZohoTestSession session = getSession();
+    public HsbcPage openBrowser(String browser) {
+        //HsbcTestSession session = getSession();
         getdriver().openBrowser("Chrome");
         return this;
     }   
 
-    public ZohoPage gotoHomepage(){
-          //  ZohoTestSession session = getSession();
-          getdriver().navigate("https://www.zoho.com");
+    public HsbcPage gotoHomepage(){
+          //  HsbcTestSession session = getSession();
+          getdriver().navigate("https://www.Hsbc.com");
 
           return new Homepage();
        
