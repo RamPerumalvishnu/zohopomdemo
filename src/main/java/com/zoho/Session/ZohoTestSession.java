@@ -9,6 +9,7 @@ import com.zoho.Web.ZohoDriver;
 
 public class ZohoTestSession {
     Webconnector con;
+    ZohoPage currentPage; //current page
 
     public ZohoTestSession() {
         con = new ZohoDriver();
@@ -26,6 +27,16 @@ public class ZohoTestSession {
 
     public Webconnector getcon() {
         return con;
+    }
+
+    public ZohoPage getCurrentPage()
+    {
+        return currentPage;
+    }
+
+    public void setCurrentPage(ZohoPage currentPage)
+    {
+        this.currentPage=currentPage;
     }
 
 }

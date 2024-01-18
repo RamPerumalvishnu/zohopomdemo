@@ -8,10 +8,7 @@ import com.zoho.Base.Pages.ZohoPage;
 public class LaunchPage extends ZohoBasePage {
 
 
-   public LaunchPage()
-   {
-    PageFactory.initElements(getcurrentDriver(), this);
-   }
+   
 
     public ZohoPage openBrowser(String browser) {
         //ZohoTestSession session = getSession();

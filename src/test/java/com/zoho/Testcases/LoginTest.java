@@ -2,6 +2,7 @@ package com.zoho.Testcases;
 
 import org.testng.annotations.Test;
 
+import com.zoho.Base.Pages.Constant;
 import com.zoho.Session.ZohoTestSession;
 
 
@@ -15,7 +16,13 @@ public class LoginTest {
 				.init()
 				.openBrowser("Chrome")
 				.gotoHomepage()
-				.validator().validateTitle("Testing");
+				.validator().validateTitle(Constant.HOME_TITLE)
+				.gotoEnterUserNamePage()
+				.submitUserName()
+				.gotoEnterpasswordPage();
+		
+				
+		
 				
 				
 				

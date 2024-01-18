@@ -10,9 +10,7 @@ import com.zoho.Base.Pages.ZohoPage;
 
 public class EnterUSernamepage extends ZohoBasePage {
 
-    public EnterUSernamepage() {
-        PageFactory.initElements(getcurrentDriver(), this);
-    }
+   
 
     @FindBy(id = Constant.USER_ID)
     WebElement userEmail;
@@ -20,15 +18,15 @@ public class EnterUSernamepage extends ZohoBasePage {
     @FindBy(id = Constant.next_Button)
     WebElement nextButton;
 
-    public void submitUserName() {
+    public ZohoPage submitUserName() {
         userEmail.sendKeys(Constant.userName);
         nextButton.click();
-
+        return this;
     }
-
-    public ZohoPage gotoEnterPasswordpage() {
-
-        return new Enterpasswordpage();
-
+    public ZohoPage gotoEnterpasswordPage() {
+      
+        nextButton.click();
+        return this;
     }
+   
 }

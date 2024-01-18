@@ -11,10 +11,7 @@ import com.zoho.Base.Pages.ZohoPage;
 
 public class Homepage extends ZohoBasePage {
 
-    public Homepage()
-    {
-     PageFactory.initElements(getcurrentDriver(), this);
-    }
+  
 
  
     @FindBy(xpath=Constant.SIGN_IN_LINK)

@@ -1,6 +1,5 @@
 package com.zoho.Base.Pages;
 
-import com.zoho.Web.WebConnector;
 import com.zoho.Web.Webconnector;
 
 public interface ZohoNormalPage {
@@ -12,5 +11,7 @@ public interface ZohoNormalPage {
     Webconnector validator();
     void quit();
     void getTotalWindows();
+    ZohoPage submitUserName();
+  
 
 }

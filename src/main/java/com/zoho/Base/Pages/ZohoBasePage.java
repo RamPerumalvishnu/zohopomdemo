@@ -1,6 +1,7 @@
 package com.zoho.Base.Pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
 import com.zoho.Session.ZohoTestSession;
@@ -8,6 +9,13 @@ import com.zoho.Web.Webconnector;
 
 public class ZohoBasePage implements ZohoPage {
 
+   
+   public ZohoBasePage()
+   {
+    PageFactory.initElements(getcurrentDriver(),this);
+    getSession().setCurrentPage(this);
+   }
+   
     @Override
     public ZohoPage openBrowser(String browser) {
        
@@ -46,11 +54,7 @@ public class ZohoBasePage implements ZohoPage {
 
    
 
-    @Override
-    public ZohoPage submitUsername(String userID) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'submitUsername'");
-    }
+   
 
     @Override
     public Webconnector validator() {
@@ -90,6 +94,14 @@ public class ZohoBasePage implements ZohoPage {
        return null;
     }
 
+   
+
+    @Override
+    public ZohoPage submitUserName() {
+       return null;
+    }
+
+    
     
     
 

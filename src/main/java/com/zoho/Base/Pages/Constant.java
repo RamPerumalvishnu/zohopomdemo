@@ -12,6 +12,7 @@ public class Constant  {
     public static final String userName="lramkumar89@yahoo.com";
     public static final String next_Button="nextbtn";
     public static final String PASSWORD="password";
+    public static final String HOME_TITLE="Zoho | Cloud Software Suite for Businesses";
 
 
    
