@@ -1,7 +1,5 @@
 package com.Zoho.Web;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -32,16 +30,14 @@ public class ZohoDriver extends ZohoValidationDriver{
     public void navigate(String url) {
 
 		driver.get(url);
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
     }
 
    
 
     @Override
     public void quit() {
-       driver.close();
-       driver.quit();
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'quit'");
     }
 
     public WebDriver getcurrentDriver()

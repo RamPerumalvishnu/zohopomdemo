@@ -5,11 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Zoho.Base.Pages.Constant;
-import com.Zoho.Base.Pages.HsbcBasePage;
-import com.Zoho.Base.Pages.HsbcPage;
+import com.Zoho.Base.Pages.ZohoBasePage;
+import com.Zoho.Base.Pages.ZohoPage;
 
 
-public class Homepage extends HsbcBasePage {
+public class Homepage extends ZohoBasePage {
 
   
 
@@ -17,7 +17,7 @@ public class Homepage extends HsbcBasePage {
     @FindBy(xpath=Constant.SIGN_IN_LINK)
     WebElement signinLink;
 
-    public HsbcPage gotoEnterUserNamePage(){
+    public ZohoPage gotoEnterUserNamePage(){
         signinLink.click();
         return new EnterUSernamepage();
     

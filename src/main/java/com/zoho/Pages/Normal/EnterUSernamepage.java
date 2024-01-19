@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Zoho.Base.Pages.Constant;
-import com.Zoho.Base.Pages.HsbcBasePage;
-import com.Zoho.Base.Pages.HsbcPage;
+import com.Zoho.Base.Pages.ZohoBasePage;
+import com.Zoho.Base.Pages.ZohoPage;
 
-public class EnterUSernamepage extends HsbcBasePage {
+public class EnterUSernamepage extends ZohoBasePage {
 
    
 
@@ -19,12 +19,12 @@ public class EnterUSernamepage extends HsbcBasePage {
     @FindBy(id = Constant.next_Button)
     WebElement nextButton;
 
-    public HsbcPage submitUserName() {
+    public ZohoPage submitUserName() {
         userEmail.sendKeys(Constant.userName);
         nextButton.click();
         return this;
     }
-    public HsbcPage gotoEnterpasswordPage() {
+    public ZohoPage gotoEnterpasswordPage() {
       
         nextButton.click();
         return this;

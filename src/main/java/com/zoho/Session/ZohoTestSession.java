@@ -2,20 +2,20 @@ package com.Zoho.Session;
 
 import org.testng.Reporter;
 
-import com.Zoho.Base.Pages.HsbcPage;
+import com.Zoho.Base.Pages.ZohoPage;
 import com.Zoho.Pages.Normal.LaunchPage;
-import com.Zoho.Web.HsbcDriver;
+import com.Zoho.Web.ZohoDriver;
 import com.Zoho.Web.Webconnector;
 
-public class HsbcTestSession {
+public class ZohoTestSession {
     Webconnector con;
-    HsbcPage currentPage; //current page
+    ZohoPage currentPage; //current page
 
-    public HsbcTestSession() {
-        con = new HsbcDriver();
+    public ZohoTestSession() {
+        con = new ZohoDriver();
     }
 
-    public HsbcPage init() {
+    public ZohoPage init() {
 
         if (Reporter.getCurrentTestResult().getTestContext().getAttribute("session") == null)
             Reporter.getCurrentTestResult().getTestContext().setAttribute("session", this);
@@ -29,12 +29,12 @@ public class HsbcTestSession {
         return con;
     }
 
-    public HsbcPage getCurrentPage()
+    public ZohoPage getCurrentPage()
     {
         return currentPage;
     }
 
-    public void setCurrentPage(HsbcPage currentPage)
+    public void setCurrentPage(ZohoPage currentPage)
     {
         this.currentPage=currentPage;
     }

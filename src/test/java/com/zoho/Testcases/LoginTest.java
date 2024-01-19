@@ -19,8 +19,7 @@ public class LoginTest {
 				.validator().validateTitle(Constant.HOME_TITLE)
 				.gotoEnterUserNamePage()
 				.submitUserName()
-				.gotoEnterpasswordPage()
-				.quit();
+				.gotoEnterpasswordPage();
 		
 				
 		

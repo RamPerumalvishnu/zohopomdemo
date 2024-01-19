@@ -9,6 +9,7 @@ public interface ZohoNormalPage {
     ZohoPage gotoEnterUserNamePage();
     ZohoPage gotoEnterpasswordPage();
     Webconnector validator();
+    void quit();
     void getTotalWindows();
     ZohoPage submitUserName();
   

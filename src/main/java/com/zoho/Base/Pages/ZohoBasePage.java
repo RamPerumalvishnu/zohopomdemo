@@ -22,7 +22,11 @@ public class ZohoBasePage implements ZohoPage {
         return null;
     }
 
-  
+    @Override
+    public void quit() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'quit'");
+    }
 
     @Override
     public void getTotalWindows() {
@@ -95,11 +99,6 @@ public class ZohoBasePage implements ZohoPage {
     @Override
     public ZohoPage submitUserName() {
        return null;
-    }
-
-    @Override
-    public void quit() {
-        getcurrentDriver().quit();
     }
 
     

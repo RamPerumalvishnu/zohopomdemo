@@ -2,12 +2,12 @@ package com.Zoho.Web;
 
 import org.openqa.selenium.WebDriver;
 
-import com.Zoho.Base.Pages.HsbcPage;
+import com.Zoho.Base.Pages.ZohoPage;
 
-public interface HsbcWebConnector  {
+public interface ZohoWebConnector  {
 
      void logout();
-     HsbcPage validateTitle(String expectedTitle);
+     ZohoPage validateTitle(String expectedTitle);
      void validateLogin();
      void openBrowser(String browser);
      void navigate(String url);

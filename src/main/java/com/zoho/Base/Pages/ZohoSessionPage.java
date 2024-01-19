@@ -1,8 +1,8 @@
 package com.Zoho.Base.Pages;
 
-public interface HsbcSessionPage {
+public interface ZohoSessionPage {
 
-    // Hsbc Sessions page hold the functions once the session is established
+    // Zoho Sessions page hold the functions once the session is established
     void createDeal();
 
     void logout();
