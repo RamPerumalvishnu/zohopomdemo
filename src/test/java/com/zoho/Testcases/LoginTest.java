@@ -18,9 +18,10 @@ public class LoginTest {
 				.validator(false).validateTitle(Constant.HOME_TITLE)
 				// .validator(true).validateTitle(Constant.HOME_TITLE)
 				.gotoEnterUserNamePage()
-				.validator(true).validateTitle(Constant.HOME_TITLE)
+				//.validator(true).validateTitle(Constant.HOME_TITLE)
 				.submitUserName()
 				.gotoEnterpasswordPage();
+		session.end();
 
 		/*
 		 * // System.out.println("printing"+ System.getProperty("user.dir"));

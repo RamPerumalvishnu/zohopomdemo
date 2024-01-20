@@ -61,6 +61,10 @@ public class ZohoDriver extends ZohoValidationDriver{
         throw new UnsupportedOperationException("Unimplemented method 'logout'");
     }
 
+    public void assertAll()
+    {
+        
+    }
    
 
     

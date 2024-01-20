@@ -18,6 +18,7 @@ public interface Webconnector extends ZohoWebConnector {
     ZohoTestSession getSession();
     boolean isStopExecution();
     void setStopExecuton(boolean stopExecution);
+    void assertAll();
    
    
      

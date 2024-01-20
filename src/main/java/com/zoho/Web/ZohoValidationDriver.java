@@ -43,7 +43,10 @@ public abstract class ZohoValidationDriver implements Webconnector{
     {
         this.stopExecution=stopExecution;
     }
-
+    public void assertAll()
+    {
+        softAssert.assertAll();
+    }
 
    
 

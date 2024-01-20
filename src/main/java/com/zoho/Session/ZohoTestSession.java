@@ -39,4 +39,9 @@ public class ZohoTestSession {
         this.currentPage=currentPage;
     }
 
+    public void end()
+    {
+        getcon().assertAll();
+    }
+
 }
