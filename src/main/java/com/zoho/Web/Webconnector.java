@@ -16,6 +16,8 @@ public interface Webconnector extends ZohoWebConnector {
     void quit();
     WebDriver getcurrentDriver();
     ZohoTestSession getSession();
+    boolean isStopExecution();
+    void setStopExecuton(boolean stopExecution);
    
    
      

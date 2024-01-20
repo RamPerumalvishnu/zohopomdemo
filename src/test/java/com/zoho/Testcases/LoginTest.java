@@ -5,28 +5,22 @@ import org.testng.annotations.Test;
 import com.Zoho.Base.Pages.Constant;
 import com.Zoho.Session.ZohoTestSession;
 
-
 public class LoginTest {
 
 	@Test
 	public void login() {
 
 		ZohoTestSession session = new ZohoTestSession();
-				session
+		session
 				.init()
 				.openBrowser("Chrome")
 				.gotoHomepage()
-				.validator().validateTitle(Constant.HOME_TITLE)
+				.validator(false).validateTitle(Constant.HOME_TITLE)
+				// .validator(true).validateTitle(Constant.HOME_TITLE)
 				.gotoEnterUserNamePage()
+				.validator(true).validateTitle(Constant.HOME_TITLE)
 				.submitUserName()
 				.gotoEnterpasswordPage();
-		
-				
-		
-				
-				
-				
-			
 
 		/*
 		 * // System.out.println("printing"+ System.getProperty("user.dir"));

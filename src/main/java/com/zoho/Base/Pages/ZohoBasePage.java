@@ -57,8 +57,10 @@ public class ZohoBasePage implements ZohoPage {
    
 
     @Override
-    public Webconnector validator() {
-      return getSession().getcon();
+    public Webconnector validator(boolean stopExecution) {
+     
+        getSession().getcon().setStopExecuton(stopExecution);
+        return getSession().getcon();
     }
 
     public ZohoTestSession getSession()

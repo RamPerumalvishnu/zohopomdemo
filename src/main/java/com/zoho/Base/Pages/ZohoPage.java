@@ -13,7 +13,7 @@ public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
     ZohoPage gotoHomepage();
     ZohoPage gotoEnterUserNamePage();
     ZohoPage gotoEnterpasswordPage();
-    Webconnector validator();
+    Webconnector validator(boolean stopExecution);
     ZohoPage navigate();
     ZohoTestSession getSession();
     ZohoPage submitUserName();

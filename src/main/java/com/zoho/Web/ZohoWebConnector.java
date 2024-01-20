@@ -13,5 +13,7 @@ public interface ZohoWebConnector  {
      void navigate(String url);
      void quit();
      WebDriver getcurrentDriver();
+     boolean isStopExecution();
+     void setStopExecuton(boolean stopExecution);
    
 }
