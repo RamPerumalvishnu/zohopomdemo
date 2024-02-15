@@ -19,7 +19,9 @@ public class Homepage extends ZohoBasePage {
 
     public ZohoPage gotoEnterUserNamePage(){
         signinLink.click();
+        log("Navigating to User Name Page");
         return new EnterUSernamepage();
+        
     
 
     }

@@ -13,11 +13,16 @@ public class Enterpasswordpage extends ZohoBasePage{
     @FindBy(id =Constant.PASSWORD)
     WebElement password;
 
+    @FindBy(id = Constant.next_Button)
+    WebElement nextButton;
+
     
-    public ZohoPage gotoEnterpasswordPage(){
-        password.sendKeys(Constant.userName);
+    public ZohoPage submitPassword(String passwordid){
+
+      //  System.out.println("In password entry page");
+        password.sendKeys(passwordid);
+        nextButton.click();
         return null;
-        
        
         
     

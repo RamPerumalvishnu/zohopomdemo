@@ -3,7 +3,6 @@ package com.Zoho.Base.Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
-
 import com.Zoho.Session.ZohoTestSession;
 import com.Zoho.Web.Webconnector;
 
@@ -14,6 +13,7 @@ public class ZohoBasePage implements ZohoPage {
    {
     PageFactory.initElements(getcurrentDriver(),this);
     getSession().setCurrentPage(this);
+   // getSession().takeScreenShot();
    }
    
     @Override
@@ -71,13 +71,13 @@ public class ZohoBasePage implements ZohoPage {
        @Override
     public ZohoPage navigate() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'navigate'");
+        return null;
     }
 
     @Override
     public ZohoPage gotoEnterUserNamePage() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'gotoEnterUserNamePage'");
+        return null;
     }
    
     public WebDriver getcurrentDriver()
@@ -98,9 +98,25 @@ public class ZohoBasePage implements ZohoPage {
 
    
 
+  
+
+     public void log(String message)
+    {
+        getSession().log(message);
+    }
+
     @Override
-    public ZohoPage submitUserName() {
-       return null;
+    public ZohoPage submitUserName(String userName) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+   
+
+    @Override
+    public ZohoPage submitPassword(String password) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'submitPassword'");
     }
 
     

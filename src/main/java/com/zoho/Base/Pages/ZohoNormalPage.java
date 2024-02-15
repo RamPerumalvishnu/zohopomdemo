@@ -11,7 +11,10 @@ public interface ZohoNormalPage {
     Webconnector validator(boolean stopExecution);
     void quit();
     void getTotalWindows();
-    ZohoPage submitUserName();
+    ZohoPage submitPassword(String password);
+    ZohoPage submitUserName(String userName);
+    void log(String message);
+
   
 
 }

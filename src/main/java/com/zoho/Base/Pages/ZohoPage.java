@@ -16,8 +16,11 @@ public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
     Webconnector validator(boolean stopExecution);
     ZohoPage navigate();
     ZohoTestSession getSession();
-    ZohoPage submitUserName();
+    ZohoPage submitUserName(String userName);
+    ZohoPage submitPassword(String password);
     void quit();
+    void log(String message);
+  
 
 
 

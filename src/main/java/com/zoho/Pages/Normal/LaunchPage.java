@@ -18,6 +18,7 @@ public class LaunchPage extends ZohoBasePage {
 
     public ZohoPage gotoHomepage(){
           //  ZohoTestSession session = getSession();
+          log("Navigating to Home Page");
           getdriver().navigate("https://www.Zoho.com");
 
           return new Homepage();

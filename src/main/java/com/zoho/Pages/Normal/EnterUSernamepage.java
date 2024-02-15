@@ -14,20 +14,32 @@ public class EnterUSernamepage extends ZohoBasePage {
    
 
     @FindBy(id = Constant.USER_ID)
-    WebElement userEmail;
+    WebElement loginid;
 
     @FindBy(id = Constant.next_Button)
     WebElement nextButton;
 
-    public ZohoPage submitUserName() {
-        userEmail.sendKeys(Constant.userName);
+    public ZohoPage submitUserName(String userName) {
+        loginid.sendKeys(userName);
         nextButton.click();
-        return this;
-    }
-    public ZohoPage gotoEnterpasswordPage() {
+      boolean presencepasswordField =validator(false).isElementPresent(Constant.PASSWORD_LOCATOR);
+       System.out.println("Presence of element "+presencepasswordField);
       
-        nextButton.click();
-        return this;
+      if(!presencepasswordField)
+        {
+           // System.out.println("ELEMENT not PRESENCE ");
+            return this;
+        }
+       
+        else{
+            return new Enterpasswordpage();
+        }
+            
+          
+
+           
+   
     }
+  
    
 }
